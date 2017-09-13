@@ -1,0 +1,17 @@
+#IntelliJ IDEA
+/.idea/**
+*.iml
+
+# Gradle
+/.gradle/**
+/.android/**
+/local.properties
+/build
+/api/build
+/gen-libs/build
+/captures
+/projectFilesBackup
+
+# General
+.DS_Store
+.externalNativeBuild
