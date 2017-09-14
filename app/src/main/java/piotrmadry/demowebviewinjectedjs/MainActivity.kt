@@ -3,7 +3,6 @@ package piotrmadry.demowebviewinjectedjs
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import java.io.BufferedReader
@@ -21,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         webView = findViewById<WebView>(R.id.webView) as WebView
 
         webView.settings.javaScriptEnabled = true
-        webView.webChromeClient = WebChromeClient()
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {
                 injectJS()
