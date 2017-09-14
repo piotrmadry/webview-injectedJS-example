@@ -32,9 +32,9 @@ class MainActivity : AppCompatActivity() {
         val jsContent: String?
         jsContent = try {
             val inputStream = assets.open("style.js")
-            val allText = inputStream.bufferedReader().use(BufferedReader::readText)
+            val fileContent = inputStream.bufferedReader().use(BufferedReader::readText)
             inputStream.close()
-            allText
+            fileContent
         } catch (e: Exception) {
             null
         }
