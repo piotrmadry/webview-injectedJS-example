@@ -1,1 +1,1 @@
-# webview-injectedJS-example
+# Webview with injected JS script for Android
